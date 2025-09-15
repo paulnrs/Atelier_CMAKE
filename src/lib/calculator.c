@@ -16,7 +16,7 @@ double _div(double a, double b) {
 	return a/b;
 }
 
-doucle _square(double a) {
+double _square(double a) {
 	return a*a;
 }
 	
