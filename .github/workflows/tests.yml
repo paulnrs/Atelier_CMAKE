@@ -87,3 +87,13 @@ jobs:
             cmake ..
             make
             ./src/calculator square 5
+  Deploy:
+    runs-on: ubuntu-latest
+    needs: [Test_Add, Test_sub, Test_mul, Test_div, Test_car]
+    steps:
+      - name: Déploiement
+        run: |
+          echo "🚀 Déploiement en cours..."
+          # Ici tu mets tes commandes de déploiement réelles
+          # Exemple : scp, rsync, docker push, kubectl apply, etc.
+          echo "✅ Déploiement terminé !"
